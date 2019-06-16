@@ -68,6 +68,9 @@ $('a[href^="#"]').on('click', function(event) {
     var target = $( $(this).attr('href') );
     if( target.length ) {
         event.preventDefault();
+        if(window.getComputedStyle(document.querySelector('.mobile-menu')).display != "none"){
+            $(menuList).hide();
+        }
         $('html, body').animate({
             scrollTop: target.offset().top,
         }, 500);
