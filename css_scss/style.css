@@ -294,9 +294,9 @@ body {
 .aboutme::before {
   content: '';
   width: 30px;
-  height: 30px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  height: 35px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
   background-color: white;
   position: relative;
   bottom: 15px;
