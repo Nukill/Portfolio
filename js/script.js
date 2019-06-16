@@ -25,22 +25,24 @@ $(document).ready(function(){
 
 var previousScrollTop;
 var isScrolling;
-var line = document.querySelector('.navLine');
+var nav = document.querySelector('.nav');
 var logo = document.querySelector('.fa-th-large');
 var navLink = document.querySelectorAll('.nav-link');
 
 function hasScrolled(){
     var scrollTop = window.scrollY;
     if (scrollTop > 10){
-        line.classList.add('navLine-move');
         logo.classList.add('logo-small');
+        nav.style.background = 'black';
+        nav.style.height = '7.5%';
         navLink.forEach((el)=>{
             el.classList.add('nav-link-small');
         })
     }
     else{
-        line.classList.remove('navLine-move');
         logo.classList.remove('logo-small');
+        nav.style.background = 'none';
+        nav.style.height = '15%';
         navLink.forEach((el)=>{
             el.classList.remove('nav-link-small');
         })
