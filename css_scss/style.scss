@@ -234,39 +234,65 @@ body{
     height: 25px;
     transform: rotate(45deg);
     background-color: white;
-    position: absolute;
-    bottom: -12.5px;
+    position: relative;
+    bottom: 12.5px;
 }
 
 .aboutme-title{
-    margin-top: 7px;
     width: 100%;
-    height: 7%;
+    height: 80px;
     font-size: 60px;
     color: #0f9d58;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    @include flexAJ();
-}
-
-.aboutme-title::after{
-    content: '';
-    width: 90px;
-    height: 2px;
-    bottom: -70px;
-    border-radius: 10%;
-    background-color: #0f9d58;
-    position: absolute;
+    text-align: center;
+    @include phone-850(){
+        font-size: 35px;
+    }
 }
 
 .aboutme-container{
     width: 80%;
     height: 80%;
     @include flexAJ();
+    @include phone-850(){
+        width: 100%;
+        height: 95%;
+        flex-flow: column;
+    }
 }
 
 .aboutme-photo, .aboutme-text{
     width: 50%;
     height: 90%;
+}
+
+.aboutme-photo{
+    @include phone-850(){
+        width: 100%;
+        height: 35%;
+    }
+}
+.aboutme-text{
+    @include phone-850(){
+        width: 100%;
+        height: 80%;
+    }
+}
+
+.aboutme-right{
+    @include phone-850(){
+        width: 60%;
+        height: 100%;
+    }
+}
+
+.aboutme-left{
+    @include phone-850(){
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .aboutme-text{
@@ -275,27 +301,35 @@ body{
     font-size: 15px;
     text-align: left;
     font-family: 'Poppins', sans-serif;
+    @include phone-850(){
+        font-size: 10px;
+        margin-top: 5%;
+        width: 100%;
+        height: 60%;
+    }
 }
 
 .aboutme-myPhoto{
     width: 160px;
     height: 160px;
     border-radius: 50%;
+    @include phone-850(){
+        width: 90px;
+        height: 90px;
+    }
 }
 
 .aboutme-school{
-    height: 50%;
-}
-
-.aboutme-info{
-    height: 50%;
-    display: flex;
-    align-items: flex-end;
+    height: 70%;
+    width: 100%;
 }
 
 .aboutme-photo{
     display: flex;
     flex-flow: column;
+    @include phone-850(){
+        flex-flow: unset;
+    }
 }
 
 .aboutme-mainInfo{
@@ -321,16 +355,51 @@ body{
 
 }
 
-.socials{
+.name, .stack, .school{
+    @include phone-850{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        height: 33.33%;
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+.aboutme-mainInfo{
     width: 100%;
-    height: 80px;
+    height: 80%;
+    display: flex;
+    flex-flow: column;
+}
+
+.aboutme-info{
+    width: 100%;
+    height: 30%;
     display: flex;
     align-items: flex-end;
+    @include phone-850(){
+        height: 20%;
+    }
+}
+
+.socials{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    @include phone-850(){
+        align-items: flex-start;
+    }
 }
 
 .fa-github, .fa-linkedin, .fa-facebook{
     font-size: 30px;
     color: #0f9d58;
+    @include phone-850(){
+        font-size: 18px;
+    }
 }
 
 .fa-linkedin, .fa-facebook{

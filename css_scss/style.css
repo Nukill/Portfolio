@@ -298,36 +298,23 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: white;
-  position: absolute;
-  bottom: -12.5px;
+  position: relative;
+  bottom: 12.5px;
 }
 
 .aboutme-title {
-  margin-top: 7px;
   width: 100%;
-  height: 7%;
+  height: 80px;
   font-size: 60px;
   color: #0f9d58;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
-.aboutme-title::after {
-  content: '';
-  width: 90px;
-  height: 2px;
-  bottom: -70px;
-  border-radius: 10%;
-  background-color: #0f9d58;
-  position: absolute;
+@media only screen and (max-width: 850px) {
+  .aboutme-title {
+    font-size: 35px;
+  }
 }
 
 .aboutme-container {
@@ -344,9 +331,54 @@ body {
           justify-content: center;
 }
 
+@media only screen and (max-width: 850px) {
+  .aboutme-container {
+    width: 100%;
+    height: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
 .aboutme-photo, .aboutme-text {
   width: 50%;
   height: 90%;
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutme-photo {
+    width: 100%;
+    height: 35%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutme-text {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutme-right {
+    width: 60%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutme-left {
+    width: 40%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .aboutme-text {
@@ -360,24 +392,31 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+@media only screen and (max-width: 850px) {
+  .aboutme-text {
+    font-size: 10px;
+    margin-top: 5%;
+    width: 100%;
+    height: 60%;
+  }
+}
+
 .aboutme-myPhoto {
   width: 160px;
   height: 160px;
   border-radius: 50%;
 }
 
-.aboutme-school {
-  height: 50%;
+@media only screen and (max-width: 850px) {
+  .aboutme-myPhoto {
+    width: 90px;
+    height: 90px;
+  }
 }
 
-.aboutme-info {
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.aboutme-school {
+  height: 70%;
+  width: 100%;
 }
 
 .aboutme-photo {
@@ -388,6 +427,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+}
+
+@media only screen and (max-width: 850px) {
+  .aboutme-photo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: unset;
+            flex-flow: unset;
+  }
 }
 
 .aboutme-mainInfo {
@@ -415,9 +463,37 @@ body {
   font-size: 15px;
 }
 
-.socials {
+@media only screen and (max-width: 850px) {
+  .name, .stack, .school {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 33.33%;
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+.aboutme-mainInfo {
   width: 100%;
-  height: 80px;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.aboutme-info {
+  width: 100%;
+  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,9 +502,40 @@ body {
           align-items: flex-end;
 }
 
+@media only screen and (max-width: 850px) {
+  .aboutme-info {
+    height: 20%;
+  }
+}
+
+.socials {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media only screen and (max-width: 850px) {
+  .socials {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .fa-github, .fa-linkedin, .fa-facebook {
   font-size: 30px;
   color: #0f9d58;
+}
+
+@media only screen and (max-width: 850px) {
+  .fa-github, .fa-linkedin, .fa-facebook {
+    font-size: 18px;
+  }
 }
 
 .fa-linkedin, .fa-facebook {
