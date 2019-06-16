@@ -28,6 +28,7 @@ var isScrolling;
 var nav = document.querySelector('.nav');
 var logo = document.querySelector('.fa-th-large');
 var navLink = document.querySelectorAll('.nav-link');
+var navLinks = document.querySelector('.nav-links');
 
 function hasScrolled(){
     var scrollTop = window.scrollY;
@@ -35,6 +36,7 @@ function hasScrolled(){
         logo.classList.add('logo-small');
         nav.style.background = 'black';
         nav.style.height = '7.5%';
+        navLinks.classList.add('nav-links-scroll');
         navLink.forEach((el)=>{
             el.classList.add('nav-link-small');
         })
@@ -43,6 +45,7 @@ function hasScrolled(){
         logo.classList.remove('logo-small');
         nav.style.background = 'none';
         nav.style.height = '15%';
+        navLinks.classList.remove('nav-links-scroll');
         navLink.forEach((el)=>{
             el.classList.remove('nav-link-small');
         })
