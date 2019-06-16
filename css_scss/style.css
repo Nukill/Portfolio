@@ -293,13 +293,13 @@ body {
 
 .aboutme::before {
   content: '';
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: white;
   position: relative;
-  bottom: 12.5px;
+  bottom: 15px;
 }
 
 .aboutme-title {
