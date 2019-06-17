@@ -581,6 +581,7 @@ body{
     justify-content: center;
     flex-flow: column;
     align-items: center;
+    z-index: 7;
     @include phone-850(){
         height: 800px;
     }
@@ -690,6 +691,6 @@ body{
     top: -3.5%;
     z-index: 5;
     @include phone-850(){
-        top: -1.1%;
+        top: -3.1%;
     }
 }
