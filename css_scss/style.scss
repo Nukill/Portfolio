@@ -445,6 +445,9 @@ body{
     position: absolute;
     background-color: white;
     top: -1.8%;
+    @include phone-850(){
+        top: -1.1%;
+    }
 }
 
 .myAbilities-container{
@@ -462,6 +465,9 @@ body{
     width: 100%;
     height: 53.32%;
     display: flex;
+    @include phone-850(){
+        height: 55.82%;
+    }
 }
 
 .myAbilities-second{
@@ -471,6 +477,7 @@ body{
     justify-content: center;
     @include phone-850(){
         flex-flow: column;
+        height: 29.16%;
     }
 }
 
@@ -499,6 +506,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     @include phone-850(){
         font-size: 38px;
+        height: 7.5%;
     }
 }
 
@@ -545,11 +553,16 @@ body{
     }
 }
 
-.jqueryIcon, .pmyIcon, .sqlIcon, .prestaShopIcon{
+.jqueryIcon, .sqlIcon{
     width: 50%;
     height: 75%;
     @include phone-850(){
         width: 80px;
         height: 80px;
     }
+}
+
+.prestaShopIcon, .pmyIcon{
+    width: 110px;
+    height: 110px;
 }

@@ -609,6 +609,12 @@ body {
   top: -1.8%;
 }
 
+@media only screen and (max-width: 850px) {
+  .myAbilities::before {
+    top: -1.1%;
+  }
+}
+
 .myAbilities-container {
   width: 90%;
   height: 90%;
@@ -642,6 +648,12 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 850px) {
+  .myAbilities-first {
+    height: 55.82%;
+  }
+}
+
 .myAbilities-second {
   width: 100%;
   height: 26.66%;
@@ -659,6 +671,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+    height: 29.16%;
   }
 }
 
@@ -713,6 +726,7 @@ body {
 @media only screen and (max-width: 850px) {
   .myAbilities-title {
     font-size: 38px;
+    height: 7.5%;
   }
 }
 
@@ -792,15 +806,20 @@ body {
   }
 }
 
-.jqueryIcon, .pmyIcon, .sqlIcon, .prestaShopIcon {
+.jqueryIcon, .sqlIcon {
   width: 50%;
   height: 75%;
 }
 
 @media only screen and (max-width: 850px) {
-  .jqueryIcon, .pmyIcon, .sqlIcon, .prestaShopIcon {
+  .jqueryIcon, .sqlIcon {
     width: 80px;
     height: 80px;
   }
+}
+
+.prestaShopIcon, .pmyIcon {
+  width: 110px;
+  height: 110px;
 }
 /*# sourceMappingURL=style.css.map */
