@@ -1114,6 +1114,11 @@ body {
   }
 }
 
+.myProjects-link {
+  color: #0f9d58;
+  text-decoration: none;
+}
+
 .contact-link {
   color: #0f9d58;
   display: -webkit-box;
