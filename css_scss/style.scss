@@ -69,7 +69,7 @@ body{
     position: fixed;
     background-color: none;
     transition: .5s;
-    z-index: 5;
+    z-index: 100;
     @include phone-850(){
     }
 }
@@ -671,12 +671,6 @@ body{
     height: 100%;
 }
 
-.hide-line{
-    @include phone-850(){
-        border-bottom: none;
-    }
-}
-
 .contact{
     width: 100%;
     height: 350px;
@@ -732,15 +726,30 @@ body{
 .contact-email, .contact-github, .contact-linkedin, .contact-facebook{
     width: 95%;
     height: 22.5%;
-    color: #0f9d58;
     @include flexAJ();
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
     @include phone-850(){
         height: 20%;
         border-bottom: 2px solid white;
         width: 40%;
     }
+}
+
+.contact-link{
+    color: #0f9d58;
+    @include flexAJ();
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.hide-line{
+    @include phone-850(){
+        border-bottom: none;
+    }
+}
+
+.profile-link{
+    text-decoration: none;
 }
 
 .change{
