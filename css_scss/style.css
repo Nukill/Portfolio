@@ -594,7 +594,7 @@ body {
 
 @media only screen and (max-width: 850px) {
   .myAbilities {
-    height: 1400px;
+    height: 2000px;
   }
 }
 
@@ -625,6 +625,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+}
+
+@media only screen and (max-width: 850px) {
+  .myAbilities-container {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .myAbilities-first {
@@ -705,7 +712,7 @@ body {
 
 @media only screen and (max-width: 850px) {
   .myAbilities-title {
-    font-size: 28px;
+    font-size: 38px;
   }
 }
 
@@ -769,7 +776,7 @@ body {
 
 @media only screen and (max-width: 850px) {
   .myAbilities-desc {
-    font-size: 18px;
+    font-size: 19px;
     height: 30%;
   }
 }
@@ -781,7 +788,7 @@ body {
 
 @media only screen and (max-width: 850px) {
   .fa-html5, .fa-css3-alt, .fa-js-square, .fa-sass, .fa-php, .fa-wordpress-simple, .fa-laravel {
-    font-size: 50px;
+    font-size: 70px;
   }
 }
 
@@ -792,8 +799,8 @@ body {
 
 @media only screen and (max-width: 850px) {
   .jqueryIcon, .pmyIcon, .sqlIcon, .prestaShopIcon {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */
