@@ -432,6 +432,9 @@ body{
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, .5);
     position: relative;
+    @include phone-850(){
+        height: 1400px;
+    }
 }
 
 .myAbilities::before{
@@ -462,6 +465,9 @@ body{
     height: 26.66%;
     display: flex;
     justify-content: center;
+    @include phone-850(){
+        flex-flow: column;
+    }
 }
 
 .myAbilities-first{
@@ -472,6 +478,11 @@ body{
     width: 100%;
     height: 50%;
     display: flex;
+    @include phone-850(){
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .myAbilities-title{
@@ -482,20 +493,30 @@ body{
     color: white;
     text-shadow: 1px 2px 2px black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include phone-850(){
+        font-size: 28px;
+    }
 }
 
 .myAbilities-element{
     width: 25%;
     height: 100%;
-
     display: flex;
     flex-flow: column;
+    @include phone-850(){
+        width: 100%;
+        height: 25%;
+        margin-top: 20px;
+    }
 }
 
 .myAbilities-photo{
     width: 100%;
     height: 80%;
     @include flexAJ();
+    @include phone-850(){
+        height: 70%;
+    }
 }
 
 .myAbilities-desc{
@@ -506,14 +527,25 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     @include flexAJ();
     font-size: 25px;
+    @include phone-850(){
+        font-size: 18px;
+        height: 30%;
+    }
 }
 
 .fa-html5, .fa-css3-alt, .fa-js-square, .fa-sass, .fa-php, .fa-wordpress-simple, .fa-laravel{
     font-size: 144px;
     color: #0f9d58;
+    @include phone-850(){
+        font-size: 50px;
+    }
 }
 
 .jqueryIcon, .pmyIcon, .sqlIcon, .prestaShopIcon{
     width: 50%;
     height: 75%;
+    @include phone-850(){
+        width: 50px;
+        height: 50px;
+    }
 }

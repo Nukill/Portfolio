@@ -592,6 +592,12 @@ body {
   position: relative;
 }
 
+@media only screen and (max-width: 850px) {
+  .myAbilities {
+    height: 1400px;
+  }
+}
+
 .myAbilities::before {
   content: '';
   width: 35px;
@@ -640,6 +646,15 @@ body {
           justify-content: center;
 }
 
+@media only screen and (max-width: 850px) {
+  .myAbilities-second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
 .myAbilities-first {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -653,6 +668,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 850px) {
+  .myAbilities-firstSection, .myAbilities-secondSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .myAbilities-title {
@@ -673,6 +703,12 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+@media only screen and (max-width: 850px) {
+  .myAbilities-title {
+    font-size: 28px;
+  }
+}
+
 .myAbilities-element {
   width: 25%;
   height: 100%;
@@ -683,6 +719,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+}
+
+@media only screen and (max-width: 850px) {
+  .myAbilities-element {
+    width: 100%;
+    height: 25%;
+    margin-top: 20px;
+  }
 }
 
 .myAbilities-photo {
@@ -697,6 +741,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .myAbilities-photo {
+    height: 70%;
+  }
 }
 
 .myAbilities-desc {
@@ -717,13 +767,33 @@ body {
   font-size: 25px;
 }
 
+@media only screen and (max-width: 850px) {
+  .myAbilities-desc {
+    font-size: 18px;
+    height: 30%;
+  }
+}
+
 .fa-html5, .fa-css3-alt, .fa-js-square, .fa-sass, .fa-php, .fa-wordpress-simple, .fa-laravel {
   font-size: 144px;
   color: #0f9d58;
 }
 
+@media only screen and (max-width: 850px) {
+  .fa-html5, .fa-css3-alt, .fa-js-square, .fa-sass, .fa-php, .fa-wordpress-simple, .fa-laravel {
+    font-size: 50px;
+  }
+}
+
 .jqueryIcon, .pmyIcon, .sqlIcon, .prestaShopIcon {
   width: 50%;
   height: 75%;
+}
+
+@media only screen and (max-width: 850px) {
+  .jqueryIcon, .pmyIcon, .sqlIcon, .prestaShopIcon {
+    width: 50px;
+    height: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
