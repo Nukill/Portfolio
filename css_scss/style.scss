@@ -422,3 +422,98 @@ body{
 .fa-linkedin, .fa-facebook{
     margin-left: 40px;
 }
+
+.myAbilities{
+    width: 100%;
+    height: 1000px;
+    @include flexAJ();
+    background-image: url('../bg4.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+.myAbilities::before{
+    content: '';
+    width: 35px;
+    height: 35px;
+    transform: rotate(135deg);
+    position: absolute;
+    background-color: white;
+    top: -1.8%;
+}
+
+.myAbilities-container{
+    width: 90%;
+    height: 90%;
+    @include flexAJ();
+    flex-flow: column;
+}
+
+.myAbilities-first{
+    width: 100%;
+    height: 53.32%;
+    display: flex;
+}
+
+.myAbilities-second{
+    width: 100%;
+    height: 26.66%;
+    display: flex;
+    justify-content: center;
+}
+
+.myAbilities-first{
+    flex-flow: column;
+}
+
+.myAbilities-firstSection, .myAbilities-secondSection{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.myAbilities-title{
+    width: 100%;
+    height: 10%;
+    @include flexAJ();
+    font-size: 45px;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.myAbilities-element{
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.myAbilities-photo{
+    width: 100%;
+    height: 80%;
+    @include flexAJ();
+}
+
+.myAbilities-desc{
+    width: 100%;
+    height: 20%;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include flexAJ();
+    font-size: 25px;
+}
+
+.fa-html5, .fa-css3-alt, .fa-js-square, .fa-sass, .fa-php, .fa-wordpress-simple, .fa-laravel{
+    font-size: 144px;
+    color: #0f9d58;
+}
+
+.jqueryIcon, .pmyIcon, .sqlIcon, .prestaShopIcon{
+    width: 50%;
+    height: 75%;
+}
