@@ -597,7 +597,7 @@ body{
     top: -3%;
     z-index: 5;
     @include phone-850(){
-        top: -1.1%;
+        top: -2%;
     }
 }
 
@@ -671,14 +671,23 @@ body{
     height: 100%;
 }
 
+.hide-line{
+    @include phone-850(){
+        border-bottom: none;
+    }
+}
+
 .contact{
     width: 100%;
-    height: 500px;
+    height: 350px;
     background-image: url('../contact.jpg');
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     @include flexAJ();
+    @include phone-850(){
+        height: 380px;
+    }
 }
 
 .contact::before{
@@ -688,9 +697,54 @@ body{
     transform: rotate(135deg);
     position: absolute;
     background-color: white;
-    top: -3.5%;
+    top: -6.7%;
     z-index: 5;
     @include phone-850(){
-        top: -3.1%;
+        top: -6%;
     }
+}
+
+.contact-container{
+    width: 90%;
+    height: 90%;
+    flex-flow: column;
+    @include flexAJ;
+    @include phone-850(){
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contact-title{
+    width: 95%;
+    height: 10%;
+    font-size: 45px;
+    margin-top: 15px;
+    @include flexAJ();
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include phone-850(){
+        font-size: 38px;
+    }
+}
+
+.contact-email, .contact-github, .contact-linkedin, .contact-facebook{
+    width: 95%;
+    height: 22.5%;
+    color: #0f9d58;
+    @include flexAJ();
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    @include phone-850(){
+        height: 20%;
+        border-bottom: 2px solid white;
+        width: 40%;
+    }
+}
+
+.change{
+    margin-left: 0;
+    margin-right: 5px;
+    color: white;
 }

@@ -871,7 +871,7 @@ body {
 
 @media only screen and (max-width: 850px) {
   .myProjects::before {
-    top: -1.1%;
+    top: -2%;
   }
 }
 
@@ -1000,9 +1000,15 @@ body {
   height: 100%;
 }
 
+@media only screen and (max-width: 850px) {
+  .hide-line {
+    border-bottom: none;
+  }
+}
+
 .contact {
   width: 100%;
-  height: 500px;
+  height: 350px;
   background-image: url("../contact.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -1018,6 +1024,12 @@ body {
           justify-content: center;
 }
 
+@media only screen and (max-width: 850px) {
+  .contact {
+    height: 380px;
+  }
+}
+
 .contact::before {
   content: '';
   width: 35px;
@@ -1026,13 +1038,94 @@ body {
           transform: rotate(135deg);
   position: absolute;
   background-color: white;
-  top: -3.5%;
+  top: -6.7%;
   z-index: 5;
 }
 
 @media only screen and (max-width: 850px) {
   .contact::before {
-    top: -3.1%;
+    top: -6%;
   }
+}
+
+.contact-container {
+  width: 90%;
+  height: 90%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .contact-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contact-title {
+  width: 95%;
+  height: 10%;
+  font-size: 45px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  text-shadow: 1px 2px 2px black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 850px) {
+  .contact-title {
+    font-size: 38px;
+  }
+}
+
+.contact-email, .contact-github, .contact-linkedin, .contact-facebook {
+  width: 95%;
+  height: 22.5%;
+  color: #0f9d58;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 850px) {
+  .contact-email, .contact-github, .contact-linkedin, .contact-facebook {
+    height: 20%;
+    border-bottom: 2px solid white;
+    width: 40%;
+  }
+}
+
+.change {
+  margin-left: 0;
+  margin-right: 5px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
