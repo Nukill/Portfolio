@@ -72,7 +72,7 @@ $('a[href^="#"]').on('click', function(event) {
             $(menuList).hide();
         }
         $('html, body').animate({
-            scrollTop: target.offset().top,
+            scrollTop: target.offset().top-100,
         }, 500);
     }
 });
