@@ -568,6 +568,104 @@ body{
 }
 
 .prestaShopIcon, .pmyIcon{
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
+}
+
+.myProjects{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    @include phone-850(){
+        height: 800px;
+    }
+}
+
+.myProjects::before{
+    content: '';
+    width: 35px;
+    height: 35px;
+    transform: rotate(135deg);
+    position: absolute;
+    background-color: white;
+    top: -3%;
+    z-index: 5;
+    @include phone-850(){
+        top: -1.1%;
+    }
+}
+
+.myProjects-title{
+    width: 40%;
+    height: 80px;
+    font-size: 60px;
+    margin-top: 20px;
+    color: #0f9d58;
+    border-bottom: 2px solid #0f9d58;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    @include phone-850(){
+        font-size: 35px;
+        width: 80%;
+        border-bottom: none;
+    }
+}
+
+.myProjects-container{
+    width: 90%;
+    height: 90%;
+    @include flexAJ();
+    @include phone-850(){
+        flex-flow: column;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.myProjects-element{
+    width: 33.33%;
+    height: 80%;
+    @include flexAJ();
+    flex-flow: column;
+    border-bottom: 2px solid #0f9d58;
+    @include phone-850(){
+        width: 100%;
+        height: 33.33%;
+    }
+}
+
+.myProjects-element-title{
+    width: 100%;
+    height: 20%;
+    @include flexAJ();
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.myProjects-element-img{
+    width: 100%;
+    height: 60%;
+    @include flexAJ();
+}
+
+.myProjects-element-desc{
+    width: 100%;
+    height: 20%;
+    @include flexAJ();
+    color: #0f9d58;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.projectIMG, .projectIMG2, .projectIMG3{
+    border-radius: 3px;
+    width: 80%;
+    height: 100%;
 }
