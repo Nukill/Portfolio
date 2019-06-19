@@ -204,13 +204,13 @@ body{
         font-size: 32px;
     }
     @include phone-850(){
-        font-size: 30px;
-    }
-    @include phone-768(){
         font-size: 28px;
     }
+    @include phone-768(){
+        font-size: 26px;
+    }
     @include phone-620(){
-        font-size: 23px;
+        font-size: 21px;
     }
 }
 
@@ -225,13 +225,13 @@ body{
         font-size: 32px;
     }
     @include phone-850(){
-        font-size: 30px;
-    }
-    @include phone-768(){
         font-size: 28px;
     }
+    @include phone-768(){
+        font-size: 26px;
+    }
     @include phone-620(){
-        font-size: 23px;    
+        font-size: 21px;
     }
 }
 

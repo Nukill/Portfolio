@@ -285,19 +285,19 @@ body {
 
 @media only screen and (max-width: 850px) {
   .aboutme-place {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .aboutme-place {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
 @media only screen and (max-width: 620px) {
   .aboutme-place {
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 
@@ -318,19 +318,19 @@ body {
 
 @media only screen and (max-width: 850px) {
   .aboutme-name {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .aboutme-name {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
 @media only screen and (max-width: 620px) {
   .aboutme-name {
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 
