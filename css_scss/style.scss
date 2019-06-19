@@ -468,11 +468,13 @@ body{
     display: flex;
     align-items: flex-end;
     margin-top: 15px;
+    @include pc-1200(){
+        margin: 0;
+    }
     @include phone-850(){
         align-items: center;
         justify-content: flex-end;
         width: 90%;
-        margin: 0;
     }
 }
 
