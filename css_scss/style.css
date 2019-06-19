@@ -71,7 +71,19 @@ body {
 
 @media only screen and (max-width: 850px) {
   .fa-th-large, .fa-th {
-    font-size: 58px;
+    font-size: 67px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .fa-th-large, .fa-th {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .fa-th-large, .fa-th {
+    font-size: 53px;
   }
 }
 
@@ -79,7 +91,25 @@ body {
   font-size: 50px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .logo-small {
+    font-size: 40px;
+  }
+}
+
 @media only screen and (max-width: 850px) {
+  .logo-small {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-small {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
   .logo-small {
     font-size: 30px;
   }
@@ -247,9 +277,27 @@ body {
   margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .aboutme-place {
+    font-size: 32px;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .aboutme-place {
-    font-size: 25px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutme-place {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .aboutme-place {
+    font-size: 23px;
   }
 }
 
@@ -262,9 +310,27 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .aboutme-name {
+    font-size: 32px;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .aboutme-name {
-    font-size: 25px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutme-name {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .aboutme-name {
+    font-size: 23px;
   }
 }
 
@@ -327,7 +393,20 @@ body {
 
 @media only screen and (max-width: 850px) {
   .aboutme-title {
-    font-size: 35px;
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutme-title {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .aboutme-title {
+    font-size: 30px;
+    height: 40px;
   }
 }
 
@@ -392,6 +471,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -405,15 +487,44 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+@media only screen and (max-width: 1200px) {
+  .aboutme-text {
+    font-size: 13px;
+    width: 100%;
+    height: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .aboutme-text {
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 5%;
     width: 100%;
     height: 60%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutme-text {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .aboutme-text {
+    font-size: 11.8px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .aboutme-text {
+    font-size: 10.5px;
   }
 }
 
@@ -425,8 +536,22 @@ body {
 
 @media only screen and (max-width: 850px) {
   .aboutme-myPhoto {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutme-myPhoto {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .aboutme-myPhoto {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -488,8 +613,26 @@ body {
             justify-content: flex-end;
     width: 90%;
     height: 33.33%;
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .name, .stack, .school {
+    font-size: 14.5px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .name, .stack, .school {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .name, .stack, .school {
+    font-size: 11px;
   }
 }
 
@@ -565,7 +708,13 @@ body {
 
 @media only screen and (max-width: 850px) {
   .fa-github, .fa-linkedin, .fa-facebook {
-    font-size: 18px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .fa-github, .fa-linkedin, .fa-facebook {
+    font-size: 21px;
   }
 }
 
@@ -598,6 +747,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 620px) {
+  .myAbilities {
+    height: 1300px;
+  }
+}
+
 .myAbilities::before {
   content: '';
   width: 35px;
@@ -612,6 +767,12 @@ body {
 @media only screen and (max-width: 850px) {
   .myAbilities::before {
     top: -1.1%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .myAbilities::before {
+    top: -2%;
   }
 }
 
@@ -733,6 +894,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 620px) {
+  .myAbilities-title {
+    font-size: 25px;
+  }
+}
+
 .myAbilities-element {
   width: 25%;
   height: 100%;
@@ -752,8 +919,6 @@ body {
     margin-top: 20px;
     border-bottom: 1px solid;
     border-bottom-color: #0f9d58;
-    line-height: 20px;
-    border-spacing: 10px 0 10px;
   }
 }
 
@@ -802,6 +967,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 620px) {
+  .myAbilities-desc {
+    font-size: 16px;
+  }
+}
+
 .fa-html5, .fa-css3-alt, .fa-js-square, .fa-sass, .fa-php, .fa-wordpress-simple, .fa-laravel {
   font-size: 144px;
   color: #0f9d58;
@@ -810,6 +981,12 @@ body {
 @media only screen and (max-width: 850px) {
   .fa-html5, .fa-css3-alt, .fa-js-square, .fa-sass, .fa-php, .fa-wordpress-simple, .fa-laravel {
     font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .fa-html5, .fa-css3-alt, .fa-js-square, .fa-sass, .fa-php, .fa-wordpress-simple, .fa-laravel {
+    font-size: 45px;
   }
 }
 
@@ -825,9 +1002,23 @@ body {
   }
 }
 
+@media only screen and (max-width: 620px) {
+  .jqueryIcon, .sqlIcon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .prestaShopIcon, .pmyIcon {
   width: 150px;
   height: 150px;
+}
+
+@media only screen and (max-width: 620px) {
+  .prestaShopIcon, .pmyIcon {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .myProjects {
@@ -853,7 +1044,13 @@ body {
 
 @media only screen and (max-width: 850px) {
   .myProjects {
-    height: 800px;
+    height: 1400px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .myProjects {
+    height: 850px;
   }
 }
 
@@ -871,7 +1068,13 @@ body {
 
 @media only screen and (max-width: 850px) {
   .myProjects::before {
-    top: -2%;
+    top: -1%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .myProjects::before {
+    top: -.55%;
   }
 }
 
@@ -886,11 +1089,23 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .myProjects-title {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .myProjects-title {
-    font-size: 35px;
+    font-size: 45px;
     width: 80%;
     border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .myProjects-title {
+    font-size: 30px;
   }
 }
 
@@ -990,7 +1205,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: #0f9d58;
-  font-size: 18px;
+  font-size: 24px;
   font-family: 'Poppins', sans-serif;
 }
 

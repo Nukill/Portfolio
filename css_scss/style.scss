@@ -31,14 +31,8 @@
     }
 }
 
-@mixin phone-370 {
-    @media only screen and (max-width : 370px) {
-        @content;
-    }
-}
-
-@mixin phone-320 {
-    @media only screen and (max-width : 320px) {
+@mixin phone-450 {
+    @media only screen and (max-width : 450px) {
         @content;
     }
 }
@@ -70,8 +64,6 @@ body{
     background-color: none;
     transition: .5s;
     z-index: 100;
-    @include phone-850(){
-    }
 }
 
 .logo{
@@ -91,14 +83,29 @@ body{
     text-shadow: 0px 0px 3px black;
     transition: font-size 200ms ease-in-out;
     @include phone-850(){
-        font-size: 58px;
+        font-size: 67px;
+    }
+    @include phone-768(){
+        font-size: 60px;
+    }
+    @include phone-620(){
+        font-size: 53px;
     }
 }
 
 .logo-small{
     font-size: 50px;
+    @include pc-1200(){
+        font-size: 40px;
+    }
     @include phone-850(){
-        font-size: 30px;
+        font-size: 34px;
+    }
+    @include phone-768(){
+        font-size: 32px;
+    }
+    @include phone-620(){
+       font-size: 30px; 
     }
 }
 
@@ -193,8 +200,17 @@ body{
     text-shadow: 1px 1px 5px black;
     text-align: center;
     margin-bottom: 50px;
+    @include pc-1200(){
+        font-size: 32px;
+    }
     @include phone-850(){
-        font-size: 25px;
+        font-size: 30px;
+    }
+    @include phone-768(){
+        font-size: 28px;
+    }
+    @include phone-620(){
+        font-size: 23px;
     }
 }
 
@@ -205,8 +221,17 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 1px 1px 5px black;
     text-align: center;
+    @include pc-1200(){
+        font-size: 32px;
+    }
     @include phone-850(){
-        font-size: 25px;
+        font-size: 30px;
+    }
+    @include phone-768(){
+        font-size: 28px;
+    }
+    @include phone-620(){
+        font-size: 23px;    
     }
 }
 
@@ -256,7 +281,14 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     @include phone-850(){
-        font-size: 35px;
+        font-size: 45px;
+    }
+    @include phone-768(){
+        font-size: 42px;
+    }
+    @include phone-620(){
+        font-size: 30px; 
+        height: 40px;  
     }
 }
 
@@ -302,6 +334,7 @@ body{
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }
 
@@ -310,12 +343,27 @@ body{
     flex-wrap: wrap;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    @include pc-1200(){
+        font-size: 13px;
+        width: 100%;
+        height: 70%;
+        justify-content: center;
+    }
     @include phone-850(){
-        font-size: 10px;
+        font-size: 14px;
         margin-top: 5%;
         width: 100%;
         height: 60%;
         justify-content: center;
+    }
+    @include phone-768(){
+        font-size: 13px;
+    }
+    @include phone-620(){
+        font-size: 11.8px;   
+    }
+    @include phone-450(){
+        font-size: 10.5px;
     }
 }
 
@@ -324,8 +372,16 @@ body{
     height: 160px;
     border-radius: 50%;
     @include phone-850(){
-        width: 90px;
-        height: 90px;
+        width: 150px;
+        height: 150px;
+    }
+    @include phone-768(){
+        width: 130px;
+        height: 130px;
+    }
+    @include phone-620(){
+        width: 100px;
+        height: 100px;   
     }
 }
 
@@ -369,8 +425,17 @@ body{
         justify-content: flex-end;
         width: 90%;
         height: 33.33%;
-        font-size: 12px;
+        font-size: 16px;
         margin: 0;
+    }
+    @include phone-768(){
+        font-size: 14.5px;
+    }
+    @include phone-620(){
+        font-size: 13px;   
+    }
+    @include phone-450(){
+        font-size: 11px;
     }
 }
 
@@ -415,7 +480,10 @@ body{
     font-size: 30px;
     color: #0f9d58;
     @include phone-850(){
-        font-size: 18px;
+        font-size: 25px;
+    }
+    @include phone-620(){
+        font-size: 21px;   
     }
 }
 
@@ -435,6 +503,9 @@ body{
     @include phone-850(){
         height: 2000px;
     }
+    @include phone-620(){
+        height: 1300px;     
+    }
 }
 
 .myAbilities::before{
@@ -447,6 +518,9 @@ body{
     top: -1.8%;
     @include phone-850(){
         top: -1.1%;
+    }
+    @include phone-620(){
+        top: -2%;
     }
 }
 
@@ -509,6 +583,9 @@ body{
         font-size: 38px;
         height: 7.5%;
     }
+    @include phone-620(){
+        font-size: 25px;   
+    }
 }
 
 .myAbilities-element{
@@ -522,8 +599,6 @@ body{
         margin-top: 20px;
         border-bottom: 1px solid;
         border-bottom-color: #0f9d58;
-        line-height: 20px;
-        border-spacing: 10px 0 10px;
     }
 }
 
@@ -548,6 +623,9 @@ body{
         font-size: 19px;
         height: 30%;
     }
+    @include phone-620(){
+        font-size: 16px;   
+    }
 }
 
 .fa-html5, .fa-css3-alt, .fa-js-square, .fa-sass, .fa-php, .fa-wordpress-simple, .fa-laravel{
@@ -555,6 +633,9 @@ body{
     color: #0f9d58;
     @include phone-850(){
         font-size: 70px;
+    }
+    @include phone-620(){
+        font-size: 45px;
     }
 }
 
@@ -565,11 +646,19 @@ body{
         width: 80px;
         height: 80px;
     }
+    @include phone-620(){
+        width: 50px;
+        height: 50px;   
+    }
 }
 
 .prestaShopIcon, .pmyIcon{
     width: 150px;
     height: 150px;
+    @include phone-620(){
+        width: 90px;
+        height: 90px;   
+    }
 }
 
 .myProjects{
@@ -583,7 +672,10 @@ body{
     align-items: center;
     z-index: 7;
     @include phone-850(){
-        height: 800px;
+        height: 1400px;
+    }
+    @include phone-620(){
+        height: 850px; 
     }
 }
 
@@ -597,7 +689,10 @@ body{
     top: -3%;
     z-index: 5;
     @include phone-850(){
-        top: -2%;
+        top: -1%;
+    }
+    @include phone-620(){
+       top: -.55%;  
     }
 }
 
@@ -610,10 +705,16 @@ body{
     border-bottom: 2px solid #0f9d58;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    @include pc-1200(){
+        width: 80%;
+    }
     @include phone-850(){
-        font-size: 35px;
+        font-size: 45px;
         width: 80%;
         border-bottom: none;
+    }
+    @include phone-620(){
+        font-size: 30px;  
     }
 }
 
@@ -661,7 +762,7 @@ body{
     height: 20%;
     @include flexAJ();
     color: #0f9d58;
-    font-size: 18px;
+    font-size: 24px;
     font-family: 'Poppins', sans-serif;
 }
 
